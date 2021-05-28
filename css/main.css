@@ -458,12 +458,12 @@ aside .form {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*Tabelt styles here*/
+  /*Tablet styles here*/
 
   /*General Styles*/
   .content-wrapper {
     max-width: 640px;
-    margin:100px 0;
+    margin: 100px 0;
   }
 
   h2 {}
@@ -479,6 +479,7 @@ aside .form {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    flex-flow: row nowrap;
   }
 
   header figure {
@@ -491,6 +492,12 @@ aside .form {
 
   header nav ul {
     justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  header nav ul li {
+    
+   
   }
 
   .header-divider {}
@@ -507,7 +514,7 @@ aside .form {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
   }
 
   aside .content-wrapper .form-description,
@@ -582,6 +589,8 @@ aside .form {
   footer .social-icons {}
 
   footer .copyright {
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
@@ -634,13 +643,95 @@ aside .form {
   .faq h4,
   .faq p {}
 
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+ 
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {}
+
+  h3,
+  h4 {}
+
+  p {}
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .form-description p {}
+  
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  footer h4 {}
+
+  
+
+  /* =========================================================
+   About Page
+   ======================================================= */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  .contact-content h4 {}
+
+
+  /* =========================================================
+   FAQ Page
+   ======================================================= */ 
+  
+  .faq h2 {
+    width: 100%;
+  } 
+
+  .faq h4,
+  .faq p {}
+
+
+
 }
+
 
 /* ==========================================================================
    Print styles.
